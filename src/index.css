@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+@theme {
+  --color-outline: #737780;
+  --color-on-surface-variant: #43474f;
+  --color-surface: #f9f9ff;
+  --color-on-error: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-fixed-variant: #1f477b;
+  --color-surface-container-low: #f1f3ff;
+  --color-on-error-container: #93000a;
+  --color-on-background: #161c27;
+  --color-on-tertiary-container: #969ca4;
+  --color-tertiary-container: #2e343a;
+  --color-on-secondary-fixed-variant: #39485c;
+  --color-surface-container: #e8eeff;
+  --color-secondary-fixed-dim: #b8c8e0;
+  --color-error: #ba1a1a;
+  --color-outline-variant: #c3c6d1;
+  --color-tertiary-fixed: #dde3eb;
+  --color-on-tertiary: #ffffff;
+  --color-surface-variant: #dde2f3;
+  --color-surface-container-high: #e3e8f9;
+  --color-on-primary-fixed: #001b3c;
+  --color-inverse-primary: #a7c8ff;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #003366;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-container: #799dd6;
+  --color-on-secondary-container: #556479;
+  --color-primary: #001e40;
+  --color-surface-dim: #d4daea;
+  --color-error-container: #ffdad6;
+  --color-primary-fixed: #d5e3ff;
+  --color-on-surface: #161c27;
+  --color-on-tertiary-fixed: #161c22;
+  --color-surface-tint: #3a5f94;
+  --color-inverse-on-surface: #ecf0ff;
+  --color-inverse-surface: #2a303d;
+  --color-on-secondary-fixed: #0d1c2e;
+  --color-on-tertiary-fixed-variant: #41474e;
+  --color-surface-bright: #f9f9ff;
+  --color-tertiary: #191f25;
+  --color-surface-container-highest: #dde2f3;
+  --color-primary-fixed-dim: #a7c8ff;
+  --color-tertiary-fixed-dim: #c1c7cf;
+  --color-secondary-container: #d1e1fa;
+  --color-background: #f9f9ff;
+  --color-secondary-fixed: #d4e4fc;
+  --color-secondary: #515f74;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
+
+  --spacing-unit: 8px;
+  --spacing-margin-mobile: 20px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-margin-desktop: 64px;
+
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-headline-lg-mobile: "Hanken Grotesk", sans-serif;
+  --font-headline-lg: "Hanken Grotesk", sans-serif;
+  --font-label-lg: "Hanken Grotesk", sans-serif;
+  --font-display-lg: "Hanken Grotesk", sans-serif;
+  --font-headline-md: "Hanken Grotesk", sans-serif;
+  --font-label-sm: "Hanken Grotesk", sans-serif;
+  --font-headline-sm: "Hanken Grotesk", sans-serif;
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+
+  --font-size-display-lg: 64px;
+  --font-size-headline-lg: 48px;
+  --font-size-headline-md: 32px;
+  --font-size-headline-sm: 24px;
+  --font-size-body-lg: 18px;
+  --font-size-body-md: 16px;
+  --font-size-label-lg: 14px;
+  --font-size-label-sm: 12px;
+  --font-size-headline-lg-mobile: 36px;
+
+  --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface antialiased min-h-screen flex flex-col;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3c6d1; /* outline-variant */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #737780; /* outline */
+}
+
+/* Structural Grid Pattern Overlay */
+.bg-structural-grid,
+.grid-pattern,
+.grid-overlay,
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(115, 119, 128, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(115, 119, 128, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #003366 0%, #001e40 100%);
+}

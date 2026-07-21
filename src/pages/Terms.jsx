@@ -3,7 +3,7 @@ import React from 'react';
 const sections = [
   {
     title: 'Genel Hükümler',
-    content: `Bu web sitesi, Zümer Mühendislik İnşaat San. ve Tic. Ltd. Şti. ("Zümer Mühendislik") tarafından işletilmektedir. Siteye erişerek veya siteyi kullanarak aşağıdaki kullanım koşullarını kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız lütfen siteyi kullanmayınız.`,
+    content: `Bu web sitesi, Zümer Mühendislik İnşaat Ticaret Limited Şirketi ("Zümer Mühendislik") tarafından işletilmektedir. Siteye erişerek veya siteyi kullanarak aşağıdaki kullanım koşullarını kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız lütfen siteyi kullanmayınız.`,
   },
   {
     title: 'Hizmetlerin Kapsamı',

@@ -4,7 +4,7 @@ const sections = [
   {
     title: '1. Veri Sorumlusunun Kimliği',
     content:
-      '6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz; veri sorumlusu sıfatıyla Zümer Mühendislik İnşaat San. ve Tic. Ltd. Şti. (bundan böyle "Zümer Mühendislik" veya "Şirket" olarak anılacaktır) tarafından aşağıda açıklanan kapsamda işlenmektedir.',
+      '6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz; veri sorumlusu sıfatıyla Zümer Mühendislik İnşaat Ticaret Limited Şirketi (bundan böyle "Zümer Mühendislik" veya "Şirket" olarak anılacaktır) tarafından aşağıda açıklanan kapsamda işlenmektedir.',
   },
   {
     title: '2. İşlenen Kişisel Veriler ve Toplanma Yöntemleri',

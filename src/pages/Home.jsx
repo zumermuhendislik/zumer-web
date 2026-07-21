@@ -78,14 +78,22 @@ export default function Home() {
                   Kentsel Dönüşüm Danışmanlığı
                 </span>
               </li>
+              <li className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  engineering
+                </span>
+                <span className="font-label-lg text-label-lg text-on-surface">
+                  Zemin Sondajı
+                </span>
+              </li>
             </ul>
           </div>
 
           <div className="col-span-4 md:col-span-6 md:col-start-7 mt-12 md:mt-0 relative">
             <img
               className="w-full aspect-[4/3] object-cover rounded-DEFAULT shadow-md"
-              alt="Architectural blueprint and corporate building visualization"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1yl6lBGLahUXKF01QBg0MobN6e60O9eM6h5mYzVnzrPCv60Cb4QRBnDFUYtp4YNo1QVw6MCSzqnJVFCUanMQLvHf8iHWFqXtONbpEpFal-RK2Cbm0gva7CsqGmLXgNwjesjXjVuMIfWP1h9UNc6MIcjvcLcs4rAfHaofSTVHWotSJ46dQCzCdeyuJgiyXbsy9ixZbejb34_SVA-SqiTOklROfZXruCdIRCUDDQ0oWn_jClE-_fQzShke2rM-1VBulAMDzBzW8pVz9"
+              alt="İnşaat ve Mühendislik Sahası"
+              src="/images/corporate_construction.jpg"
             />
             <div className="absolute -bottom-8 -left-8 bg-primary p-8 rounded-DEFAULT border border-outline-variant/20 shadow-2xl">
               <p className="font-display-lg text-headline-lg text-on-primary">60+</p>

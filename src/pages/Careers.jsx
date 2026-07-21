@@ -31,29 +31,7 @@ export default function Careers() {
     },
   ];
 
-  const jobs = [
-    {
-      title: 'Kıdemli Yapısal Mühendis',
-      type: 'Tam Zamanlı',
-      tagType: 'primary', // maps tag colors
-      location: 'İstanbul, TR (Hibrit)',
-      dept: 'Mühendislik Departmanı',
-    },
-    {
-      title: 'Proje Yöneticisi (Mega Yapılar)',
-      type: 'Tam Zamanlı',
-      tagType: 'primary',
-      location: 'Ankara, TR',
-      dept: 'Proje Yönetimi',
-    },
-    {
-      title: 'BIM Koordinatörü',
-      type: 'Sözleşmeli',
-      tagType: 'secondary',
-      location: 'Uzaktan',
-      dept: 'Tasarım & Teknoloji',
-    },
-  ];
+  const jobs = [];
 
   return (
     <div className="w-full">
@@ -152,42 +130,53 @@ export default function Careers() {
           </div>
 
           <div className="space-y-4">
-            {jobs.map((job, idx) => (
-              <div
-                key={idx}
-                className="group bg-surface-container-lowest border border-outline-variant/20 rounded-lg p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:border-primary transition-all duration-300 cursor-pointer shadow-sm"
-              >
-                <div className="mb-4 md:mb-0">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h3 className="font-headline-sm text-headline-sm text-primary font-bold">
-                      {job.title}
-                    </h3>
-                    <span
-                      className={`font-label-sm text-label-sm px-2 py-1 rounded-sm ${
-                        job.tagType === 'primary'
-                          ? 'bg-primary-container text-on-primary-container'
-                          : 'bg-secondary-container text-on-secondary-container'
-                      }`}
-                    >
-                      {job.type}
-                    </span>
+            {jobs.length > 0 ? (
+              jobs.map((job, idx) => (
+                <div
+                  key={idx}
+                  className="group bg-surface-container-lowest border border-outline-variant/20 rounded-lg p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:border-primary transition-all duration-300 cursor-pointer shadow-sm"
+                >
+                  <div className="mb-4 md:mb-0">
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="font-headline-sm text-headline-sm text-primary font-bold">
+                        {job.title}
+                      </h3>
+                      <span
+                        className={`font-label-sm text-label-sm px-2 py-1 rounded-sm ${
+                          job.tagType === 'primary'
+                            ? 'bg-primary-container text-on-primary-container'
+                            : 'bg-secondary-container text-on-secondary-container'
+                        }`}
+                      >
+                        {job.type}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-6 text-on-surface-variant font-body-md text-body-md">
+                      <span className="flex items-center gap-1">
+                        <span className="material-symbols-outlined text-sm">location_on</span>
+                        {job.location}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <span className="material-symbols-outlined text-sm">engineering</span>
+                        {job.dept}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-6 text-on-surface-variant font-body-md text-body-md">
-                    <span className="flex items-center gap-1">
-                      <span className="material-symbols-outlined text-sm">location_on</span>
-                      {job.location}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="material-symbols-outlined text-sm">engineering</span>
-                      {job.dept}
-                    </span>
-                  </div>
+                  <button className="inline-flex items-center justify-center font-label-lg text-label-lg border border-primary text-primary px-6 py-2 rounded-DEFAULT hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap">
+                    Başvur <span className="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+                  </button>
                 </div>
-                <button className="inline-flex items-center justify-center font-label-lg text-label-lg border border-primary text-primary px-6 py-2 rounded-DEFAULT hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap">
-                  Başvur <span className="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
-                </button>
+              ))
+            ) : (
+              <div className="text-center py-12 px-6 bg-surface-container-lowest border border-outline-variant/20 rounded-lg shadow-sm">
+                <p className="font-body-lg text-body-lg text-on-surface-variant font-medium">
+                  Şu an için aktif bir açık pozisyonumuz bulunmamaktadır.
+                </p>
+                <p className="font-body-md text-body-md text-on-surface-variant/75 mt-2">
+                  Bizimle çalışmak isterseniz genel başvuru yapabilirsiniz.
+                </p>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="mt-12 text-center">

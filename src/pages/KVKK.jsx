@@ -46,7 +46,7 @@ export default function KVKK() {
           </h2>
           <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-xl p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { label: 'Unvan', value: 'Zümer Mühendislik İnşaat San. ve Tic. Ltd. Şti.' },
+              { label: 'Unvan', value: 'Zümer Mühendislik İnşaat Ticaret Limited Şirketi' },
               { label: 'Adres', value: 'Büyükdere Cad. No:195, Levent 34394, Şişli / İstanbul' },
               { label: 'E-posta', value: 'info@zumermuhendislik.com' },
               { label: 'Telefon', value: '+90 212 555 01 23' },

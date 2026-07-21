@@ -11,7 +11,7 @@ export default function Corporate() {
             className="bg-cover bg-center w-full h-full"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBG7sUXu6828mh9iskygrzvE9LnHbXsVavWkRSz9NU3GnDknl-GCZow1PpwL1KJOqrcwm5A6TWy9JLLsM6SJzLqCDUFHsuinT5ML5j_iao5wy5UTaeE5JMTchiTf7dtzOP3lkFn15EvKp34lLSWs0aglPi9s0Q5-tTZoCnyNnFpbGO_qZXC9HGNgs7scdaofTyczG6rOfKd37Js6sQVmZI65dvHhFTGegIH52TtDzCN6pTF0-zCR0MgvgC0jN4C8KDnVEyqmB4mWC0b')",
+                "url('/images/corporate_hero.jpg')",
             }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
@@ -147,18 +147,18 @@ export default function Corporate() {
               className="absolute inset-0 bg-cover bg-center rounded-DEFAULT shadow-md"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6TSNWrBmDxBgqF-qlzTtAxvTV--Vpj38BmXtLV8o9u1KhH2U-fzP34dX5bFSXbZ2xdCcgD-2L7fAygOWUGZD2IzEWcGUiPvJHa_Zxg1CUpI2kS2mdLIWO_jC7GNx8a0-t2tv_BerGa0AWshCeEU8UzJTmhoWkbyAK2_QBPQw0iCEeG8ninwDFWkqiIgoIB_-dAxLArZYVJsNyPdbZ6PNtudaTbZyNhUI4BixmYXec8av7xfAFncRkfWznzTACsV4FDQHd1iziAvJi')",
+                  "url('/images/corporate_construction.jpg')",
               }}
             ></div>
             {/* Stats overlay */}
             <div className="absolute -bottom-8 -right-8 bg-surface-container-lowest p-6 border border-outline-variant/20 hidden md:block shadow-lg rounded-DEFAULT">
               <div className="flex flex-col gap-6">
                 <div>
-                  <span className="font-headline-lg text-headline-lg text-primary block">35+</span>
+                  <span className="font-headline-lg text-headline-lg text-primary block">5+</span>
                   <span className="font-label-sm text-label-sm text-secondary uppercase">Yıllık Tecrübe</span>
                 </div>
                 <div>
-                  <span className="font-headline-lg text-headline-lg text-primary block">120+</span>
+                  <span className="font-headline-lg text-headline-lg text-primary block">60+</span>
                   <span className="font-label-sm text-label-sm text-secondary uppercase">Tamamlanan Proje</span>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export default function Corporate() {
               Mühendislikte Çeyrek Asrı Aşan Güven
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Zümer Mühendislik, kurulduğu günden bu yana karmaşık ve büyük ölçekli projelerin aranılan ismi olmuştur. İlk yıllarımızdaki yerel altyapı projelerinden, bugün yönettiğimiz uluslararası mega yapılara kadar değişmeyen tek şey, mühendislik disiplinine olan sadakatimizdir.
+              Zümer Mühendislik, kurulduğu günden bu yana girdiğimiz bütün işleri başarılı bir şekilde sonlandırmayı ilke edinmiştir. Projelerimizdeki teknik başarı ve disiplinli çalışma anlayışımız, mühendislik disiplinine olan sadakatimizin bir göstergesidir.
             </p>
             <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
               Global endüstri standartlarını sadece uygulamakla kalmıyor, aynı zamanda Ar-Ge yatırımlarımızla sektörel gelişime liderlik ediyoruz. Güçlü finansal yapımız ve uzman kadromuzla geleceğin şehirlerini inşa etmeye devam ediyoruz.

@@ -64,7 +64,7 @@ export default function Footer() {
       {/* Bottom Footer Section */}
       <div className="max-w-container-max mx-auto w-full pt-8 border-t border-surface-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
         <p className="font-body-md text-body-md text-surface-variant/70">
-          © 2026 Zümer Mühendislik Altyapı Yatırımları. Tüm Hakları Saklıdır.
+          © 2026 Zümer Mühendislik Tüm Hakları Saklıdır.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {legalLinks.map((link, idx) => (

@@ -46,12 +46,12 @@ export default function Projects() {
                 return (
                   <div
                     key={idx}
-                    className="py-10 px-4 flex items-center gap-4 group"
+                    className="py-14 px-4 flex flex-col items-center justify-center gap-4 text-center group"
                   >
-                    <span className="inline-flex flex-col items-center justify-center gap-1.5 md:gap-2 select-none" aria-hidden="true">
-                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary"></span>
-                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary"></span>
-                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary"></span>
+                    <span className="inline-flex flex-col items-center justify-center gap-2 select-none" aria-hidden="true">
+                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary/40 group-hover:bg-primary transition-colors duration-300"></span>
+                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary/40 group-hover:bg-primary transition-colors duration-300"></span>
+                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary/40 group-hover:bg-primary transition-colors duration-300"></span>
                     </span>
                     <h2 className="font-display-lg text-3xl md:text-5xl text-primary font-bold tracking-tight">
                       +200 Proje

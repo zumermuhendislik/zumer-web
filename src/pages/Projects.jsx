@@ -46,10 +46,15 @@ export default function Projects() {
                 return (
                   <div
                     key={idx}
-                    className="py-10 px-4 flex items-center"
+                    className="py-10 px-4 flex items-center gap-4 group"
                   >
+                    <span className="inline-flex flex-col items-center justify-center gap-1.5 md:gap-2 select-none" aria-hidden="true">
+                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary"></span>
+                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary"></span>
+                      <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary"></span>
+                    </span>
                     <h2 className="font-display-lg text-3xl md:text-5xl text-primary font-bold tracking-tight">
-                      {project}
+                      +200 Proje
                     </h2>
                   </div>
                 );

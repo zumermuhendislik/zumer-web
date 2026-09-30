@@ -10,7 +10,14 @@ export default function Projects() {
     "Harbiye Orduevi Zemin ve Parke İmalatı",
     "Türkiye Hudut ve Sahiller Sağlık Genel Müdürlüğü Muhtelif Tadilat ve Onarım İşleri",
     "Milli Savunma Bakanlığı Teras Revizyonu",
-    "Yıldız Teknik Üniversitesi Gemi İnşaatı ve Denizcilik Fakültesi Acil Durum Tahliye Krokisi"
+    "Yıldız Teknik Üniversitesi Gemi İnşaatı ve Denizcilik Fakültesi Acil Durum Tahliye Krokisi",
+    "Hazine ve Maliye Bakanlığı, Bahçelievler Vergi Dairesi Doktor Odası Yapımı",
+    "Muş İl Sağlık Müdürlüğü İhata Duvarı Yapımı",
+    "Ayhan Arı Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi Sınıfların Bakım Onarım Tadilat İşleri",
+    "Eyüp Güzeltepe ASM Bina Geneli Boya ve Tadilat İşleri",
+    "Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları E.A.H. Psikiyatri Acil Kadın-Erkek Tuvaletlerinin Yenilenmesi",
+    "Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları E.A.H. Diş Periapikal Görüntüleme Odası Kurşun Kaplama",
+    "... +200 Proje"
   ];
 
   return (
@@ -33,21 +40,37 @@ export default function Projects() {
       <main className="py-24 bg-background">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="max-w-4xl mx-auto divide-y divide-outline-variant/30">
-            {projects.map((project, idx) => (
-              <div
-                key={idx}
-                className="group flex items-start gap-6 py-8 first:pt-0 last:pb-0 hover:bg-surface-container-low/10 px-4 rounded-lg transition-all duration-300"
-              >
-                <span className="font-display-md text-headline-md-mobile md:text-display-md text-primary/40 group-hover:text-primary transition-colors duration-300 select-none pt-0.5 min-w-[3rem]">
-                  {(idx + 1).toString().padStart(2, '0')}
-                </span>
-                <div className="flex-1">
-                  <h2 className="font-headline-sm text-headline-sm-mobile md:text-headline-sm text-on-surface group-hover:text-primary transition-colors duration-300 font-medium leading-snug">
-                    {project}
-                  </h2>
+            {projects.map((project, idx) => {
+              const isMore = project.includes('+200');
+              if (isMore) {
+                return (
+                  <div
+                    key={idx}
+                    className="py-10 px-4 flex items-center"
+                  >
+                    <h2 className="font-display-lg text-3xl md:text-5xl text-primary font-bold tracking-tight">
+                      {project}
+                    </h2>
+                  </div>
+                );
+              }
+
+              return (
+                <div
+                  key={idx}
+                  className="group flex items-start gap-6 py-8 first:pt-0 last:pb-0 hover:bg-surface-container-low/10 px-4 rounded-lg transition-all duration-300"
+                >
+                  <span className="font-display-md text-headline-md-mobile md:text-display-md text-primary/40 group-hover:text-primary transition-colors duration-300 select-none pt-0.5 min-w-[3rem]">
+                    {(idx + 1).toString().padStart(2, '0')}
+                  </span>
+                  <div className="flex-1">
+                    <h2 className="font-headline-sm text-headline-sm-mobile md:text-headline-sm text-on-surface group-hover:text-primary transition-colors duration-300 font-medium leading-snug">
+                      {project}
+                    </h2>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </main>
